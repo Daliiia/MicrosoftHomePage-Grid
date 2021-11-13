@@ -1,0 +1,305 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    margin:0px;
+}
+#page{
+    width:90%;
+    margin:auto;
+    /* border:2px solid black; */
+}
+.none{
+    display: none;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+header ul li{
+    display: inline-block;
+    padding: 5px;
+}
+header .microsoft div{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+header a img{
+    width:108px;
+    padding:15px 10px;
+    /* border: 2px solid black; */
+}
+header{    
+    height: 54px;
+    display: grid;
+    grid-template-areas: "iicon nav . microsoftBar";
+    grid-template-columns: 0.5fr 1.7fr 1.6fr 1fr;
+    align-items: center;
+    
+}
+
+.icon{
+    grid-area:iicon;
+}
+.nav{
+    grid-area: nav;
+    grid-column: 2/4;
+}
+.microsoft{
+    grid-area:microsoftBar;
+
+}
+.microsoft a:hover span{
+    text-decoration: underline;
+}
+nav ul a:hover span{
+border-bottom: 3px solid black;
+}
+nav div a:hover span{
+    text-decoration: underline;
+}
+
+.display{
+    display:none;
+}
+.para{
+    height: 40px;
+    background-color: #0067B8;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.para i{
+    grid-column: 5/6;
+}
+.para:hover span{
+    text-decoration: underline;
+    margin-right: 10px;
+    margin-left:10px;
+    transition: 0.3s ease-in-out;
+}
+.img{
+    background-image: url(img/RWKCAD.webp);
+    height: 514px;
+    display: grid;
+    grid-template-columns: 3fr 6fr 1fr;
+}
+.box{
+    height: auto;
+    width:100%;
+    padding-left: 80px;
+    padding-top: 80px;
+}
+.shop-now{
+    background-color: black;
+    color:white;
+    padding: 10px;  
+    width: 90px;
+    float:left;
+    text-align: center;
+
+}
+.shop-now:hover span{
+    margin-right: 10px;
+    transition: 0.3s ease;
+    text-decoration: underline;
+    text-align: left;
+}
+.new{
+    background-color: rgba(243, 200, 61, 0.993);
+    color: black;
+    padding: 10px;
+    font-weight: 30px;
+    width: fit-content;
+
+}
+.offers{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    height: 140px;
+    margin: 40px;
+    justify-items: center;
+}
+.offers a{
+    text-align:center;
+    color:black;
+    width: 120px;
+}
+.offers a:hover{
+    text-decoration: underline;
+}
+.boxs{
+    height: 450px;
+}
+.boxs img{
+    width:100%;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(4,23%);
+    gap: 0px calc(8%/3);
+}
+.shop{
+    color: #0067B8;
+    width: 150px;
+    float:left;
+}
+.shop:hover span{
+    text-decoration: underline;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+.imgHeadphones{
+    background-image: url(img/RE4D5uF.webp);
+    background-size: 100% 100%;
+    height:500px;
+     display: grid;
+    grid-template-areas: "content2 . .";
+    grid-template-columns:3fr 1fr 0.3fr;
+    align-items: center;
+}
+.content2{
+    grid-area: content2;
+}
+.imgg{
+width: 100%;
+}
+.content2{
+    width: 500px;
+    padding-left: 40px;
+}
+.headphones .shop-surface{
+
+    background-color: black;
+    color:white;
+    padding: 10px;  
+    width: 170px;
+    display:block;
+    text-align:center;
+ }
+ 
+ .shop-surface:hover span{
+     text-decoration: underline;
+     margin-right: 10px;
+     transition: 0.3s ease;
+     text-align:left;
+ }
+.shop2{
+    color: #950c17;
+
+}
+.shop2:hover span{
+    text-decoration: underline;
+    margin-right: 5px;
+    transition: 0.3s ease;   
+}
+.covid{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    height: 125px;
+    padding-top: 8px;
+    padding-bottom:30px ;
+}
+.game{
+    height: 500px;
+    margin-bottom: 90px;
+}
+.imgGame{
+    background-image: url(img/RE4Gs2M.webp);
+    background-size: 100% 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+.game .learnmore{
+    padding: 10px;
+    background-color: white;
+    width: 100px;
+    float:left;
+    text-align: center;
+
+}
+.learnmore:hover span{
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    transition: 0.3s ease;
+ 
+}
+.contentt .learnmore:hover{
+    background-color: rgb(252, 247, 247);
+}
+
+.game .contentt{
+    padding-left:50% ;
+    padding-top: 3%;
+    color: white;
+    width: 50%;
+}
+.follow{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.fa-facebook-square{
+    color: #425daa;
+}
+.fa-twitter-square{
+    color:#55acee;
+}
+.fa-linkedin{
+    color:#0177b5;
+}
+footer ul a:hover{
+    text-decoration: underline;
+}
+footer ul li{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+footer{
+    background-color: rgb(238, 235, 235);
+    margin-top: 20px;
+
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.info .contenthead{
+    font-size:20px
+}
+.lang ul{
+    display: grid;
+    grid-template-columns: repeat(8,100px);
+    justify-items: end;
+    justify-items: center;
+}
+ .lang{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+ }
+
+ .lang ul li{
+    display: inline-block;
+ }
+ .center{
+     width: 90%;
+     margin: auto;
+     padding-top: 30px;
+ }
+ .lang a:hover span{
+    text-decoration: underline ;
+}
